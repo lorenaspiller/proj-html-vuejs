@@ -8,3 +8,27 @@
 body {
   font-family: 'Work Sans', sans-serif;
 }
+
+
+// mix
+.no-style {
+  list-style: none;
+}
+
+@mixin flexBoxSpBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexBoxAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
