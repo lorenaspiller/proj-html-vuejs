@@ -1,0 +1,28 @@
+.btn {
+  font-family: 'Work Sans', sans-serif;
+  font-size: $fontButton;
+  font-weight: $fontSansMedium;
+  padding: 15px 25px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn-primary {
+  background-color: $mainPrimaryColor;
+  color: $mainSecondaryColor;
+  &:hover {
+    background-color: $mainSecondaryColor;
+    color: $mainPrimaryColor;
+  }
+}
+
+.btn-secondary {
+  background-color: $mainSecondaryColor;
+  color: $mainPrimaryColor;
+  &:hover {
+    background-color: $mainPrimaryColor;
+    color: $mainSecondaryColor;
+  }
+}

@@ -1,0 +1,27 @@
+// margin top from 5px to 50px
+@for $i from 1 through 10 {
+  .mt-#{$i * 5} {
+  margin-top: 5px * $i;
+  }
+}
+
+// margin bottom from 5px to 50px
+@for $i from 1 through 10 {
+  .mb-#{$i * 5} {
+  margin-bottom: 5px * $i;
+  }
+}
+
+// padding top from 5px to 50px
+@for $i from 1 through 10 {
+  .pt-#{$i * 5} {
+  padding-top: 5px * $i;
+  }
+}
+
+// padding bottom from 5px to 50px
+@for $i from 1 through 10 {
+  .pb-#{$i * 5} {
+  padding-bottom: 5px * $i;
+  }
+}

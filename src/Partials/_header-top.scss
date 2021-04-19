@@ -18,11 +18,30 @@
       display: flex;
 
       li {
-        margin-left: 20px;
+        margin-left: 40px;
 
         a {
           font-size: $fontHeading-type;
           font-weight: $fontSansMedium;
+          position: relative;
+
+          &:after {
+            content: "";
+            display: block;
+            background-color: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: $mainPrimaryColor;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          }
+
+          &:hover:after {
+            width: 100%;
+            left:0;
+          }
         }
       }
     }

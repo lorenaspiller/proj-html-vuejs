@@ -1,3 +1,22 @@
 .hero {
+  height: 100%;
+  position: relative;
+  top: 200px;
 
+  &__text {
+    width: 30%;
+
+    &__title-heading {
+      @include titleHeading;
+    }
+
+    &__section-title{
+      @include titleSection;
+    }
+
+    p {
+      @include greyParagraph;
+      line-height: 30px;
+    }
+  }
 }

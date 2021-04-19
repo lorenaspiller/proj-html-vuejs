@@ -11,6 +11,11 @@ body {
 
 
 // mix
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .no-style {
   list-style: none;
 }
@@ -31,4 +36,31 @@ a {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+@mixin titleHeading {
+  font-size: $fontHeading-type;
+  font-weight: $fontSansReg;
+  color: $SecondaryTextColor;
+}
+
+@mixin titleSection {
+  font-weight: $fontSerifBold;
+  color: $mainPrimaryColor;
+}
+
+@mixin greyParagraph {
+  font-size: $fontParagraph;
+  font-weight: $fontSansReg;
+  color: $SecondaryTextColor;
+}
+
+@mixin whiteParagraph {
+  font-size: $fontParagraph;
+  font-weight: $fontSansReg;
+  color: $mainSecondaryColor;
 }
