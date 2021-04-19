@@ -30,19 +30,10 @@
           </div>
           <nav class="header-top__nav">
             <!-- dynamic navbar -->
-            <ul class="no-style uppercase">
+            <ul class="no-style uppercase" v-for="item in navbar" v-if="item.position.header == true">
 
-              <!-- CHANGE TO VueJs dynamic links!! -->
-              <li><a href="#" class="pb-5">home</a></li>
-              <li><a href="#">shop</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">gallery</a></li>
-              <li><a href="#">locations</a></li>
-              <li><a href="#">journal</a></li>
-              <li><a href="#">contact</a></li>
-              <li><a href="#">my account</a></li>
-              <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-              <!-- CHANGE TO VueJs dynamic links!! -->
+              <li v-if="item.icon == false"><a href="#" class="pb-5 dynamic-link">{{item.name}}</a></li>
+              <li v-if="item.icon == true"><a href=""><i :class="item.family + ' ' +  item.prefix + item.title"></i></a></li>
 
             </ul>
           </nav>
@@ -54,15 +45,21 @@
               <h5 class="hero__text__title-heading uppercase mb-20">fresh &amp; tasty bakery every day</h5>
               <h1 class="hero__text__section-title capitalize mb-20">the perfect fresh bread</h1>
               <p >Cras consequat lectus vestibulum tortor pulvinar, quis euismod nisl varius. Aliquam erat volutpat. Nullam quis sagittis nibh ac nulla id orci tempor.</p>
-              <button class="btn btn-primary mt-30">Explore our products</button>
+              <button class="btn btn-secondary mt-30">Explore our products</button>
             </div>
           </div>
-
         </div>
       </header>
 
       <main>
         <section id="products">
+          <div class="main-container">
+            <div class="products__text">
+              <h5 class="products__text__title-heading uppercase mb-20">our products</h5>
+              <h2 class="products__text__section-title mb-20">All our delectable pastries are backed fresh in our Kitchen very morning, and are made with all-natural, all organic ingredients.</h2>
+              <button class="btn btn-primary mt-30">Start Shopping</button>
+            </div>
+          </div>
           <!-- section products -->
         </section>
         <section id="corporate-weddings">

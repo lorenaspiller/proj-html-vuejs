@@ -13,8 +13,9 @@
   background-color: $mainPrimaryColor;
   color: $mainSecondaryColor;
   &:hover {
-    background-color: $mainSecondaryColor;
+    background-color: $btnHoverPrimary;
     color: $mainPrimaryColor;
+
   }
 }
 

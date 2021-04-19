@@ -45,7 +45,7 @@ a {
   color: #fff;
 }
 .btn-primary:hover {
-  background-color: #fff;
+  background-color: #f0edf5;
   color: #55328b;
 }
 
@@ -235,7 +235,7 @@ header {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 135%;
 }
 
 .header-top {
@@ -244,7 +244,7 @@ header {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 40px;
 }
 .header-top__logo {
   width: 200px;
@@ -252,22 +252,30 @@ header {
 .header-top__logo img {
   width: 100%;
 }
+.header-top__nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .header-top__nav ul {
   display: flex;
 }
 .header-top__nav ul li {
   margin-left: 40px;
+  display: flex;
+  align-items: center;
 }
 .header-top__nav ul li a {
   font-size: 12px;
   font-weight: 500;
+  line-height: 125px;
   position: relative;
 }
-.header-top__nav ul li a:after {
+.header-top__nav ul li a.dynamic-link:after {
   content: "";
   display: block;
   background-color: none repeat scroll 0 0 transparent;
-  bottom: 0;
+  bottom: 50px;
   width: 0;
   height: 2px;
   left: 50%;
@@ -275,7 +283,7 @@ header {
   background: #55328b;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
-.header-top__nav ul li a:hover:after {
+.header-top__nav ul li a.dynamic-link:hover:after {
   width: 100%;
   left: 0;
 }
@@ -302,4 +310,18 @@ header {
   font-weight: 400;
   color: #676371;
   line-height: 30px;
+}
+
+.products__text {
+  width: 30%;
+  padding: 150px 0;
+}
+.products__text__title-heading {
+  font-size: 12px;
+  font-weight: 400;
+  color: #676371;
+}
+.products__text__section-title {
+  font-weight: 700;
+  color: #55328b;
 }

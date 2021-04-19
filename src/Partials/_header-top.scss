@@ -1,8 +1,8 @@
 .header-top {
-  height: 125px;
+  height: $navHeight;
   @include flexBoxSpBetween;
   @include flexBoxAlignCenter;
-  padding: 10px 20px;
+  padding: 10px 40px;
 
   &__logo {
     width: 200px;
@@ -13,23 +13,28 @@
   }
 
   &__nav {
+    height: 100%;
+    @include flexBoxAlignCenter;
 
     ul {
       display: flex;
 
       li {
         margin-left: 40px;
+        @include flexBoxAlignCenter;
+
 
         a {
           font-size: $fontHeading-type;
           font-weight: $fontSansMedium;
+          line-height: $navHeight;
           position: relative;
 
-          &:after {
+          &.dynamic-link:after {
             content: "";
             display: block;
             background-color: none repeat scroll 0 0 transparent;
-            bottom: 0;
+            bottom: 50px;
             width: 0;
             height: 2px;
             left: 50%;
@@ -38,7 +43,7 @@
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
           }
 
-          &:hover:after {
+          &.dynamic-link:hover:after {
             width: 100%;
             left:0;
           }

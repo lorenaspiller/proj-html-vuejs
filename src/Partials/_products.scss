@@ -1,0 +1,14 @@
+.products {
+  &__text {
+    width: 30%;
+    padding: 150px 0;
+
+    &__title-heading {
+      @include titleHeading;
+    }
+
+    &__section-title {
+      @include titleSection;
+    }
+  }
+}
