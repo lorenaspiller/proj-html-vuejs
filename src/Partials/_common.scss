@@ -30,6 +30,19 @@ body {
   align-items: center;
 }
 
+@mixin flexBoxCenterCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexBoxColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -62,5 +75,22 @@ a {
 @mixin whiteParagraph {
   font-size: $fontParagraph;
   font-weight: $fontSansReg;
+  color: $mainSecondaryColor;
+}
+
+@mixin chevronStyle {
+  background-color: $mainPrimaryColor;
+  color: $mainSecondaryColor;
+  opacity: .6;
+  @include flexBoxCenterCenter;
+  height: 90px;
+  width: 40px;
+  position: absolute;
+  z-index: 11;
+  cursor: pointer;
+}
+
+@mixin hoverSlideText {
+  font-weight: $fontSerifBold;
   color: $mainSecondaryColor;
 }

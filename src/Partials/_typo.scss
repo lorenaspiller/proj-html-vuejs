@@ -1,6 +1,6 @@
 // typo
 // // titles
-h1, h2 {
+h1, h2, h4 {
   font-family: 'Source Serif Pro', serif;
 }
 
@@ -10,4 +10,16 @@ h1 {
 
 h2 {
   font-size: $fontSectionTitles;
+}
+
+h4 {
+  font-size: $fontHoverTitle;
+}
+
+h3 {
+  font-size: $fontHoverPrice;
+}
+
+h5 {
+  font-size: $fontHeading-type;
 }

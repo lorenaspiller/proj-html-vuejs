@@ -58,7 +58,7 @@ a {
   color: #fff;
 }
 
-h1, h2 {
+h1, h2, h4 {
   font-family: "Source Serif Pro", serif;
 }
 
@@ -68,6 +68,18 @@ h1 {
 
 h2 {
   font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 12px;
 }
 
 .mt-5 {
@@ -312,16 +324,96 @@ header {
   line-height: 30px;
 }
 
-.products__text {
-  width: 30%;
+.products {
   padding: 150px 0;
 }
-.products__text__title-heading {
+.products .items-wrapper {
+  display: flex;
+}
+.products .items-wrapper .products__text {
+  width: 40%;
+  padding-right: 100px;
+}
+.products .items-wrapper .products__text .products__title-heading {
   font-size: 12px;
   font-weight: 400;
   color: #676371;
 }
-.products__text__section-title {
+.products .items-wrapper .products__text .products__section-title {
   font-weight: 700;
   color: #55328b;
+}
+.products .items-wrapper .carousel {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.products .items-wrapper .carousel__arrow-left {
+  background-color: #55328b;
+  color: #fff;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 40px;
+  position: absolute;
+  z-index: 11;
+  cursor: pointer;
+  left: 0;
+}
+.products .items-wrapper .carousel__slide {
+  display: flex;
+  width: 49%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.products .items-wrapper .carousel__slide .slide-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  background-color: rgba(21, 31, 46, 0.3);
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.6s ease-in-out;
+}
+.products .items-wrapper .carousel__slide .slide-hover__title {
+  font-weight: 700;
+  color: #fff;
+}
+.products .items-wrapper .carousel__slide .slide-hover__type {
+  font-size: 12px;
+  font-weight: 400;
+}
+.products .items-wrapper .carousel__slide .slide-hover__price {
+  font-size: 24px;
+  font-weight: 400;
+}
+.products .items-wrapper .carousel__slide:hover .slide-hover {
+  opacity: 1;
+}
+.products .items-wrapper .carousel__slide img {
+  width: 100%;
+}
+.products .items-wrapper .carousel__arrow-right {
+  background-color: #55328b;
+  color: #fff;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 40px;
+  position: absolute;
+  z-index: 11;
+  cursor: pointer;
+  right: 0;
 }

@@ -1,14 +1,78 @@
 .products {
-  &__text {
-    width: 30%;
-    padding: 150px 0;
+  padding: 150px 0;
+  .items-wrapper {
+    display: flex;
 
-    &__title-heading {
-      @include titleHeading;
+    .products__text {
+      width: 40%;
+      padding-right: 100px;
+
+      .products__title-heading {
+        @include titleHeading;
+      }
+
+      .products__section-title {
+        @include titleSection;
+      }
     }
 
-    &__section-title {
-      @include titleSection;
+    .carousel {
+      width: 60%;
+      @include flexBoxAlignCenter;
+      @include flexBoxSpBetween;
+      position: relative;
+
+      &__arrow-left {
+        @include chevronStyle;
+        left: 0;
+      }
+
+      &__slide {
+        display: flex;
+        width: 49%;
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+
+        .slide-hover {
+          @include flexBoxColumnCenter;
+          opacity: 0;
+          background-color: rgba(21, 31, 46, 0.3);
+          color: $mainSecondaryColor;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          transition: opacity .6s ease-in-out;
+
+          &__title {
+            @include hoverSlideText;
+          }
+
+          &__type{
+            font-size: $fontHeading-type;
+            font-weight: $fontSansReg;
+          }
+
+          &__price {
+            font-size: $fontHoverTitle;
+            font-weight: $fontSansReg;
+          }
+        }
+
+        &:hover .slide-hover{
+          opacity: 1;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &__arrow-right {
+        @include chevronStyle;
+        right: 0;
+      }
     }
   }
+
 }
