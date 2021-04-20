@@ -1317,3 +1317,52 @@ header {
   display: flex;
   justify-content: space-around;
 }
+
+.social .social-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.social .social-top .social-box-image {
+  width: calc(25% - 25px);
+  overflow: hidden;
+}
+.social .social-top .social-box-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 1s ease-in-out;
+}
+.social .social-top .social-box-image img:hover {
+  transform: scale(1.1);
+}
+.social .social-top .social-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(240deg, #f0edf5 10%, #f9f1f2 90%);
+  text-align: center;
+  width: calc( (25% - 25px) * 2 + 25px );
+  height: auto;
+}
+.social .social-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.social .social-bottom .social-box-image {
+  width: calc(25% - 25px);
+  overflow: hidden;
+}
+.social .social-bottom .social-box-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 1s ease-in-out;
+}
+.social .social-bottom .social-box-image img:hover {
+  transform: scale(1.1);
+}

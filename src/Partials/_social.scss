@@ -1,0 +1,42 @@
+// images boxes style
+@mixin boxMosaic {
+  width: 100%;
+  @include flexBoxSpBetween;
+
+
+  .social-box-image {
+    width: calc(25% - 25px);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+
+// social style
+.social {
+  .social-top {
+    @include boxMosaic;
+
+    .social-inner {
+      @include flexBoxColumnCenter;
+      background: $socialTextBg;
+      text-align: center;
+      width: calc( (25% - 25px) * 2 + 25px );
+      height: auto;
+    }
+  }
+
+  .social-bottom {
+    @include boxMosaic;
+
+  }
+}
