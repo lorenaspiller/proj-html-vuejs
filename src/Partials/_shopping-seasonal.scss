@@ -1,0 +1,15 @@
+.shopping-seasonal {
+  color: $mainSecondaryColor;
+  background-image: url('../img/call-to-action-bg.jpg');
+  @include bgCover;
+  @include flexBoxColumnCenter;
+  height: 550px;
+
+  .shopping-seasonal-wrapper {
+    width: 60%;
+
+    .social-title {
+      font-size: $fontSocialTitle;
+    }
+  }
+}

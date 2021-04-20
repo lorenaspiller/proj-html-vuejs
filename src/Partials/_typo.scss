@@ -19,6 +19,7 @@ h3, h4 {
 
 h5 {
   font-size: $fontHeading-type;
+  font-weight: $fontSansReg;
 }
 
 @mixin titleHeading {

@@ -17,6 +17,11 @@ body {
   margin: 0 auto;
 }
 
+.small-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .no-style {
   list-style: none;
 }
@@ -80,6 +85,7 @@ h3, h4 {
 
 h5 {
   font-size: 12px;
+  font-weight: 400;
 }
 
 .title-heading {
@@ -1365,4 +1371,22 @@ header {
 }
 .social .social-bottom .social-box-image img:hover {
   transform: scale(1.1);
+}
+
+.shopping-seasonal {
+  color: #fff;
+  background-image: url("../img/call-to-action-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+.shopping-seasonal .shopping-seasonal-wrapper {
+  width: 60%;
+}
+.shopping-seasonal .shopping-seasonal-wrapper .social-title {
+  font-size: 48px;
 }
