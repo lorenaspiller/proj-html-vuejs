@@ -65,3 +65,11 @@ h5 {
     line-height: 30px;
   }
 }
+
+.title-heading {
+  @include titleHeading;
+}
+
+.section-title {
+  @include titleSection;
+}

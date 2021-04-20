@@ -40,6 +40,11 @@ body {
   justify-content: space-between;
 }
 
+@mixin flexBoxSpAround {
+  display: flex;
+  justify-content: space-around;
+}
+
 @mixin flexBoxAlignCenter {
   display: flex;
   align-items: center;

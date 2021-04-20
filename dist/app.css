@@ -82,6 +82,17 @@ h5 {
   font-size: 12px;
 }
 
+.title-heading {
+  font-size: 12px;
+  font-weight: 400;
+  color: #676371;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #55328b;
+}
+
 .mt-5 {
   margin-top: 5px;
 }
@@ -958,12 +969,10 @@ header {
   font-size: 12px;
   font-weight: 400;
   color: #676371;
-  color: #fff;
 }
 .corporate-weddings__inner .left-column-corporate .inner-hover__title {
   font-weight: 700;
   color: #55328b;
-  color: #fff;
 }
 .corporate-weddings__inner .left-column-corporate .inner-hover:hover {
   opacity: 1;
@@ -998,12 +1007,10 @@ header {
   font-size: 12px;
   font-weight: 400;
   color: #676371;
-  color: #fff;
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover__title {
   font-weight: 700;
   color: #55328b;
-  color: #fff;
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover:hover {
   opacity: 1;
@@ -1262,4 +1269,51 @@ header {
   display: flex;
   flex-direction: column;
   width: 40%;
+}
+
+.locations {
+  text-align: center;
+}
+.locations .locations-wrapper {
+  display: flex;
+}
+.locations .locations-wrapper .box-locations-left {
+  background-color: #f1f9fb;
+  width: 50%;
+}
+.locations .locations-wrapper .box-locations-left .box-locations-image {
+  width: 100%;
+  overflow: hidden;
+}
+.locations .locations-wrapper .box-locations-left .box-locations-image img {
+  width: 100%;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.locations .locations-wrapper .box-locations-left .box-locations-image img:hover {
+  transform: scale(1.2);
+}
+.locations .locations-wrapper .box-locations-left .locations-info {
+  display: flex;
+  justify-content: space-around;
+}
+.locations .locations-wrapper .box-locations-right {
+  background-color: #faf3e3;
+  width: 50%;
+}
+.locations .locations-wrapper .box-locations-right .box-locations-image {
+  width: 100%;
+  overflow: hidden;
+}
+.locations .locations-wrapper .box-locations-right .box-locations-image img {
+  width: 100%;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+.locations .locations-wrapper .box-locations-right .box-locations-image img:hover {
+  transform: scale(1.2);
+}
+.locations .locations-wrapper .box-locations-right .locations-info {
+  display: flex;
+  justify-content: space-around;
 }

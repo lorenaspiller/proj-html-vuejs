@@ -1,0 +1,42 @@
+// box settings
+@mixin boxLocation ($bgCard) {
+  background-color: $bgCard;
+  width: 50%;
+  .box-locations-image {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      cursor: pointer;
+      transition: all 1s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+
+  }
+
+  .locations-info {
+    @include flexBoxSpAround;
+  }
+}
+
+.locations {
+  text-align: center;
+
+  .locations-wrapper {
+    display: flex;
+
+    .box-locations-left {
+      @include boxLocation($leftBgCard);
+    }
+
+    .box-locations-right {
+      @include boxLocation($rightBgCard);
+    }
+
+  }
+}

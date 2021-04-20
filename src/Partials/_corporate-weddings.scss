@@ -24,12 +24,10 @@
 @mixin corporateWeddingHover {
   &__title-header {
     @include titleHeading;
-    color: $mainSecondaryColor;
   }
 
   &__title {
     @include titleSection;
-    color: $mainSecondaryColor;
   }
   opacity: 0;
 
