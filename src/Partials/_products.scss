@@ -4,7 +4,6 @@
 
     .products__text {
       width: 40%;
-      padding-right: 100px;
 
       .products__title-heading {
         @include titleHeading;
@@ -17,7 +16,7 @@
 
     .carousel {
       width: 60%;
-      @include carousel(49%, 100%, 40px, 90px);
+      @include carousel(2, 20px, 40px, 90px, 20px);
     }
   }
 

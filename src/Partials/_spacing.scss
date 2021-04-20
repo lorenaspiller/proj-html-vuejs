@@ -33,6 +33,20 @@
   }
 }
 
+// padding right from 5px to 100px
+@for $i from 1 through 20 {
+  .pr-#{$i * 5} {
+  padding-right: 5px * $i;
+  }
+}
+
+// padding left from 5px to 100px
+@for $i from 1 through 20 {
+  .pl-#{$i * 5} {
+  padding-left: 5px * $i;
+  }
+}
+
 // padding bottom from 5px to 100px
 @for $i from 1 through 20 {
   .pb-#{$i * 5} {
