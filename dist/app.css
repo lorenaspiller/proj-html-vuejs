@@ -70,12 +70,8 @@ h2 {
   font-size: 36px;
 }
 
-h4 {
+h3, h4 {
   font-size: 24px;
-}
-
-h3 {
-  font-size: 16px;
 }
 
 h5 {
@@ -122,6 +118,206 @@ h5 {
   margin-top: 50px;
 }
 
+.mt-55 {
+  margin-top: 55px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-65 {
+  margin-top: 65px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mt-75 {
+  margin-top: 75px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-85 {
+  margin-top: 85px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mt-95 {
+  margin-top: 95px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-35 {
+  margin-left: 35px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.ml-45 {
+  margin-left: 45px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.ml-55 {
+  margin-left: 55px;
+}
+
+.ml-60 {
+  margin-left: 60px;
+}
+
+.ml-65 {
+  margin-left: 65px;
+}
+
+.ml-70 {
+  margin-left: 70px;
+}
+
+.ml-75 {
+  margin-left: 75px;
+}
+
+.ml-80 {
+  margin-left: 80px;
+}
+
+.ml-85 {
+  margin-left: 85px;
+}
+
+.ml-90 {
+  margin-left: 90px;
+}
+
+.ml-95 {
+  margin-left: 95px;
+}
+
+.ml-100 {
+  margin-left: 100px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mr-35 {
+  margin-right: 35px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mr-45 {
+  margin-right: 45px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
+.mr-55 {
+  margin-right: 55px;
+}
+
+.mr-60 {
+  margin-right: 60px;
+}
+
+.mr-65 {
+  margin-right: 65px;
+}
+
+.mr-70 {
+  margin-right: 70px;
+}
+
+.mr-75 {
+  margin-right: 75px;
+}
+
+.mr-80 {
+  margin-right: 80px;
+}
+
+.mr-85 {
+  margin-right: 85px;
+}
+
+.mr-90 {
+  margin-right: 90px;
+}
+
+.mr-95 {
+  margin-right: 95px;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+
 .mb-5 {
   margin-bottom: 5px;
 }
@@ -162,6 +358,46 @@ h5 {
   margin-bottom: 50px;
 }
 
+.mb-55 {
+  margin-bottom: 55px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-65 {
+  margin-bottom: 65px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mb-75 {
+  margin-bottom: 75px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-85 {
+  margin-bottom: 85px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.mb-95 {
+  margin-bottom: 95px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
 .pt-5 {
   padding-top: 5px;
 }
@@ -200,6 +436,46 @@ h5 {
 
 .pt-50 {
   padding-top: 50px;
+}
+
+.pt-55 {
+  padding-top: 55px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pt-65 {
+  padding-top: 65px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pt-75 {
+  padding-top: 75px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pt-85 {
+  padding-top: 85px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pt-95 {
+  padding-top: 95px;
+}
+
+.pt-100 {
+  padding-top: 100px;
 }
 
 .pb-5 {
@@ -243,7 +519,7 @@ h5 {
 }
 
 header {
-  background-image: url(../img/hero-header-bakery.jpg);
+  background-image: url("../img/hero-header-bakery.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -416,4 +692,95 @@ header {
   z-index: 11;
   cursor: pointer;
   right: 0;
+}
+
+.corporate-weddings {
+  text-align: center;
+}
+.corporate-weddings__title-heading {
+  font-size: 12px;
+  font-weight: 400;
+  color: #676371;
+}
+.corporate-weddings__section-title {
+  font-weight: 700;
+  color: #55328b;
+}
+.corporate-weddings__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.corporate-weddings__inner {
+  height: 800px;
+}
+.corporate-weddings__inner .left-column-corporate {
+  height: 100%;
+  width: calc(100% / 2 - 20px);
+  background-image: url("../img/corporate-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.corporate-weddings__inner .left-column-corporate .inner-hover {
+  background-image: url("../img/corporate-hover-bg.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+  color: #fff;
+  opacity: 0;
+}
+.corporate-weddings__inner .left-column-corporate .inner-hover__title-header {
+  font-weight: 400;
+}
+.corporate-weddings__inner .left-column-corporate .inner-hover__title {
+  font-weight: 700;
+}
+.corporate-weddings__inner .left-column-corporate .inner-hover:hover {
+  opacity: 1;
+}
+.corporate-weddings__inner .right-column-weddings {
+  height: 100%;
+  width: calc(100% / 2 - 20px);
+  background-image: url("../img/wedding-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  background-size: 113%;
+}
+.corporate-weddings__inner .right-column-weddings .inner-hover {
+  background-image: url("../img/wedding-hover-bg.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+  color: #fff;
+  opacity: 0;
+}
+.corporate-weddings__inner .right-column-weddings .inner-hover__title-header {
+  font-weight: 400;
+}
+.corporate-weddings__inner .right-column-weddings .inner-hover__title {
+  font-weight: 700;
+}
+.corporate-weddings__inner .right-column-weddings .inner-hover:hover {
+  opacity: 1;
 }

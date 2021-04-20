@@ -1,0 +1,51 @@
+.corporate-weddings {
+  text-align: center;
+
+  &__title-heading {
+    @include titleHeading;
+  }
+
+  &__section-title {
+    @include titleSection;
+  }
+
+  &__inner {
+    @include flexBoxSpBetween;
+  }
+
+  &__inner {
+    height: 800px;
+    // background-color: lime;
+
+    .left-column-corporate {
+      height: 100%;
+      width: calc(100% / 2 - 20px);
+      background-image: url('../img/corporate-bg.jpg');
+      @include bgCorporateWedding;
+
+      .inner-hover {
+        background-image: url('../img/corporate-hover-bg.jpg');
+        @include corporateWeddingBg;
+        @include corporateWeddingHover;
+      }
+
+    }
+
+    .right-column-weddings {
+      height: 100%;
+      width: calc(100% / 2 - 20px);
+      background-image: url('../img/wedding-bg.jpg');
+      @include bgCorporateWedding;
+      background-size: 113%;
+
+      .inner-hover {
+        background-image: url('../img/wedding-hover-bg.jpg');
+        @include corporateWeddingBg;
+        @include corporateWeddingHover;
+
+      }
+    }
+
+  }
+
+}
