@@ -20,3 +20,26 @@ h3, h4 {
 h5 {
   font-size: $fontHeading-type;
 }
+
+@mixin titleHeading {
+  font-size: $fontHeading-type;
+  font-weight: $fontSansReg;
+  color: $SecondaryTextColor;
+}
+
+@mixin titleSection {
+  font-weight: $fontSerifBold;
+  color: $mainPrimaryColor;
+}
+
+@mixin greyParagraph {
+  font-size: $fontParagraph;
+  font-weight: $fontSansReg;
+  color: $SecondaryTextColor;
+}
+
+@mixin whiteParagraph {
+  font-size: $fontParagraph;
+  font-weight: $fontSansReg;
+  color: $mainSecondaryColor;
+}

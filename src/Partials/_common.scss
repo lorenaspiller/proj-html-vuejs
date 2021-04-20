@@ -55,29 +55,6 @@ a {
   text-transform: capitalize;
 }
 
-@mixin titleHeading {
-  font-size: $fontHeading-type;
-  font-weight: $fontSansReg;
-  color: $SecondaryTextColor;
-}
-
-@mixin titleSection {
-  font-weight: $fontSerifBold;
-  color: $mainPrimaryColor;
-}
-
-@mixin greyParagraph {
-  font-size: $fontParagraph;
-  font-weight: $fontSansReg;
-  color: $SecondaryTextColor;
-}
-
-@mixin whiteParagraph {
-  font-size: $fontParagraph;
-  font-weight: $fontSansReg;
-  color: $mainSecondaryColor;
-}
-
 @mixin chevronStyle {
   background-color: $mainPrimaryColor;
   color: $mainSecondaryColor;
@@ -118,13 +95,15 @@ a {
 }
 
 @mixin corporateWeddingHover {
-  color: $mainSecondaryColor;
+
   &__title-header {
-    font-weight: $fontSansReg;
+    @include titleHeading;
+    color: $mainSecondaryColor;
   }
 
   &__title {
-    font-weight: $fontSerifBold;
+    @include titleSection;
+    color: $mainSecondaryColor;
   }
   opacity: 0;
 

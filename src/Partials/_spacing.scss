@@ -34,7 +34,7 @@
 }
 
 // padding bottom from 5px to 100px
-@for $i from 1 through 10 {
+@for $i from 1 through 20 {
   .pb-#{$i * 5} {
   padding-bottom: 5px * $i;
   }

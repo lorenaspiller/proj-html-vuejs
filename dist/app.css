@@ -518,6 +518,46 @@ h5 {
   padding-bottom: 50px;
 }
 
+.pb-55 {
+  padding-bottom: 55px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pb-65 {
+  padding-bottom: 65px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pb-75 {
+  padding-bottom: 75px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pb-85 {
+  padding-bottom: 85px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.pb-95 {
+  padding-bottom: 95px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
 header {
   background-image: url("../img/hero-header-bakery.jpg");
   height: 100vh;
@@ -600,9 +640,6 @@ header {
   line-height: 30px;
 }
 
-.products {
-  padding: 150px 0;
-}
 .products .items-wrapper {
   display: flex;
 }
@@ -736,14 +773,18 @@ header {
   align-items: center;
   justify-content: center;
   transition: all 0.6s ease-in-out;
-  color: #fff;
   opacity: 0;
 }
 .corporate-weddings__inner .left-column-corporate .inner-hover__title-header {
+  font-size: 12px;
   font-weight: 400;
+  color: #676371;
+  color: #fff;
 }
 .corporate-weddings__inner .left-column-corporate .inner-hover__title {
   font-weight: 700;
+  color: #55328b;
+  color: #fff;
 }
 .corporate-weddings__inner .left-column-corporate .inner-hover:hover {
   opacity: 1;
@@ -772,14 +813,18 @@ header {
   align-items: center;
   justify-content: center;
   transition: all 0.6s ease-in-out;
-  color: #fff;
   opacity: 0;
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover__title-header {
+  font-size: 12px;
   font-weight: 400;
+  color: #676371;
+  color: #fff;
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover__title {
   font-weight: 700;
+  color: #55328b;
+  color: #fff;
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover:hover {
   opacity: 1;
