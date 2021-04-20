@@ -5,7 +5,9 @@ $mainSecondaryColor: #fff;
 $SecondaryTextColor: #676371;
 $btnHoverPrimary: #f0edf5;
 // // our-mission section
-$MissionTextBg: linear-gradient(140deg, rgb(240, 237, 245) 10%, rgb(249, 241, 242) 90%);
+$MissionTextBg: #f7f0f3;
+$boxHeight: 800px;
+$boxHover: linear-gradient(170deg, rgba(35, 33, 37, 0.3) 0%, rgba(35, 33, 37, 0.8) 100%);
 // // location section
 $leftBgCard: rgb(241, 249, 251);
 $rightBgCard: rgb(250, 243, 227);
@@ -21,7 +23,7 @@ $fontHoverPriceSecondary: 18px;
 $fontParagraph: 18px;
 $fontButton: 14px;
 $fontHoverTitle: 24px;
-
+$fontTitleMission: 56px;
 // //our-mission section
 $fontNumbers: 96px;
 

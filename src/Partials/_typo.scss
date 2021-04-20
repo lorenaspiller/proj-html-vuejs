@@ -43,3 +43,25 @@ h5 {
   font-weight: $fontSansReg;
   color: $mainSecondaryColor;
 }
+
+@mixin titleMission {
+  h2 {
+    font-size: $fontTitleMission;
+    font-weight: $fontSerifBold;
+  }
+
+  h3 {
+    font-size: $fontNumbers;
+    font-weight: $fontSansThin;
+  }
+
+  h5 {
+    @include titleHeading;
+    color: $mainSecondaryColor;
+  }
+
+  p {
+    @include whiteParagraph;
+    line-height: 30px;
+  }
+}

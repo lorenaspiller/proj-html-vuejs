@@ -1,0 +1,55 @@
+.our-mission {
+  color: $mainSecondaryColor;
+  @include titleMission;
+
+  .ingredients {
+    background-image: $boxHover, url('../img/bakery-process-1.jpg');
+    @include bgCover;
+    height: $boxHeight;
+
+    .text-wrapper {
+      display: flex;
+      height: $boxHeight;
+
+      .title-column {
+        width: 40%;
+      }
+
+      .text-column {
+        @include flexBoxColumn;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 60%;
+
+        &-bottom{
+          width: 60%;
+        }
+      }
+    }
+  }
+
+  .mission-center-wrapper {
+    height: $boxHeight;
+    display: flex;
+
+    .start-baking {
+      background-image: $boxHover, url('../img/bakery-process-2.jpg');
+      height: 800px;
+      width: calc(100% / 2 - 20px);
+      @include bgCover;
+      background-position: center right;
+    }
+
+    .mission-text {
+      background-color: $MissionTextBg;
+      width: calc(100% / 2);
+    }
+  }
+
+  .delivery {
+    height: $boxHeight;
+    background-image: $boxHover, url('../img/bakery-process-3.jpg');
+    @include bgCover;
+    background-position: center center;
+  }
+}
