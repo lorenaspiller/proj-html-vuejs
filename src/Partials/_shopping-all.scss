@@ -1,0 +1,14 @@
+.shopping-all {
+  &__text {
+    width: 20%;
+
+    &__section-title {
+      @include titleSection;
+    }
+  }
+
+  .carousel {
+    width: 80%;
+    height: 500px;
+  }
+}

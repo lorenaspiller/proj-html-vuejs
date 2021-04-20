@@ -17,16 +17,16 @@ body {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
 
 .capitalize {
   text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
 }
 
 .btn {
@@ -828,4 +828,16 @@ header {
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover:hover {
   opacity: 1;
+}
+
+.shopping-all__text {
+  width: 20%;
+}
+.shopping-all__text__section-title {
+  font-weight: 700;
+  color: #55328b;
+}
+.shopping-all .carousel {
+  width: 80%;
+  height: 500px;
 }
