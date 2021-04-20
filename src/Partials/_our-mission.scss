@@ -1,30 +1,59 @@
+//text layout block of our-mission section
+@mixin missionTextLayout ($widthTitle, $widthText) {
+  .text-wrapper {
+    @include flexBoxColumn;
+    justify-content: space-between;
+    height: $boxHeight;
+
+    .title-row {
+      @include flexBoxSpBetween;
+      width: 100%;
+      .row-main-title {
+        width: $widthTitle;
+      }
+    }
+
+    .text-row {
+      width: 100%;
+      .text-column-bottom {
+        @include flexBoxColumn;
+        width: $widthText;
+      }
+    }
+  }
+}
+
+@mixin textsColorChange {
+  h5 {
+    color: $SecondaryTextColor;
+  }
+
+  h2 {
+    color: $mainPrimaryColor;
+    font-size: 48px;
+  }
+
+  .founder-signature  {
+    font-size: $fontFounderSignature;
+  }
+}
+
+
+// our-mission style
 .our-mission {
   color: $mainSecondaryColor;
   @include titleMission;
 
+  //ingredients section
   .ingredients {
     background-image: $boxHover, url('../img/bakery-process-1.jpg');
     @include bgCover;
     height: $boxHeight;
 
-    .text-wrapper {
-      display: flex;
-      height: $boxHeight;
+    @include missionTextLayout(40%, 40%);
 
-      .title-column {
-        width: 40%;
-      }
-
-      .text-column {
-        @include flexBoxColumn;
-        align-items: flex-end;
-        justify-content: space-between;
-        width: 60%;
-
-        &-bottom{
-          width: 60%;
-        }
-      }
+    .text-column-bottom {
+      margin-left: auto;
     }
   }
 
@@ -32,24 +61,37 @@
     height: $boxHeight;
     display: flex;
 
+    //start-baking section
     .start-baking {
       background-image: $boxHover, url('../img/bakery-process-2.jpg');
       height: 800px;
       width: calc(100% / 2 - 20px);
       @include bgCover;
       background-position: center right;
+
+      @include missionTextLayout(100%, 50%);
     }
 
+    //mission-text section
     .mission-text {
-      background-color: $MissionTextBg;
+      @include flexBoxCenterCenter;
+      background: $MissionTextBg;
       width: calc(100% / 2);
+      padding: 40px 100px;
+
+      &__wrapper {
+        @include textsColorChange;
+      }
     }
   }
 
+  // delivery section
   .delivery {
     height: $boxHeight;
     background-image: $boxHover, url('../img/bakery-process-3.jpg');
     @include bgCover;
     background-position: center center;
+
+    @include missionTextLayout(40%, 40%);
   }
 }

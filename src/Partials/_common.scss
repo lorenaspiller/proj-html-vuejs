@@ -63,9 +63,17 @@ body {
   align-items: center;
 }
 
+// link
 a {
   text-decoration: none;
 }
+
+// background
+@mixin bgCover {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 //CAROUSEL
 @mixin carousel($nSlides, $marginSlide, $chevWidth, $chevHeight, $fontSizeChevron) {
@@ -143,6 +151,7 @@ a {
   }
 }
 
+//carousel hover text settings
 @mixin slideHoverTextProducts {
   &__title {
     font-weight: $fontSerifBold;
@@ -157,48 +166,5 @@ a {
   &__price {
     font-size: $fontHoverTitle;
     font-weight: $fontSansReg;
-  }
-}
-
-@mixin bgCover {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-//CORPORATE-WEDDING
-@mixin bgCorporateWedding {
-  @include bgCover;
-  background-position: center;
-  border-radius: 3px;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-@mixin corporateWeddingBg {
-  width: 100%;
-  height: 100%;
-  @include bgCover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all .6s ease-in-out;
-}
-
-@mixin corporateWeddingHover {
-  &__title-header {
-    @include titleHeading;
-    color: $mainSecondaryColor;
-  }
-
-  &__title {
-    @include titleSection;
-    color: $mainSecondaryColor;
-  }
-  opacity: 0;
-
-  &:hover {
-    opacity: 1;
   }
 }
