@@ -885,7 +885,7 @@ header {
 }
 .products .items-wrapper .carousel__slide {
   display: flex;
-  width: calc(100% / $nSlides - $marginSlide);
+  width: calc(100% / 2 - 20px);
   margin-left: 20px;
   height: 100%;
   cursor: pointer;
@@ -1088,7 +1088,7 @@ header {
 }
 .shopping-all .carousel__slide {
   display: flex;
-  width: calc(100% / $nSlides - $marginSlide);
+  width: calc(100% / 4 - 20px);
   margin-left: 20px;
   height: 100%;
   cursor: pointer;
@@ -1498,11 +1498,18 @@ footer .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input:focu
 }
 
 .back-to-top {
+  display: none;
+  border: 0;
   position: fixed;
-  bottom: 2%;
+  bottom: 50px;
   right: 2%;
+  cursor: pointer;
 }
-.back-to-top a {
+.back-to-top:focus {
+  outline: none;
+}
+.back-to-top i {
+  color: #fff;
   display: block;
   width: 50px;
   height: 50px;
@@ -1512,5 +1519,7 @@ footer .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input:focu
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+}
+.back-to-top.back-to-top--active {
+  display: block;
 }

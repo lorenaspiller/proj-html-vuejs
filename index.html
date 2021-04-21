@@ -51,6 +51,12 @@
         </div>
       </header>
 
+      <!-- back to top button -->
+      <button class="back-to-top" @click="backToTop" :class="chevronBackToTop ? 'back-to-top--active' : '' ">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+      <!-- /back to top button -->
+
       <main>
         <!-- products -->
         <section id="products" class="products pt-75 pb-75">
@@ -64,30 +70,20 @@
 
               <!-- carousel -->
               <div class="carousel">
-                <div class="carousel__arrow-left">
+                <div class="carousel__arrow-left" @click="prev">
                   <i class="fas fa-chevron-left"></i>
                 </div>
-                <div class="carousel__slide">
+                <div class="carousel__slide" v-for="item, i in smallSelection.slice(slideIndex, slideIndexSliceProd)">
                   <div class="slide-img">
-                    <img src="img/choco-chip-cookies.jpg" alt="choco-chip-cookies">
+                    <img :src="item.img" :alt="item.name">
                     <div class="slide-hover">
-                      <h4 class="slide-hover__title">Choco Chip Cookies</h4>
-                      <h5 class="slide-hover__type mt-10 mb-10">Cookies, Pastries</h5>
-                      <h3 class="slide-hover__price">$18.00 _ $32.00</h3>
+                      <h4 class="slide-hover__title">{{item.name}}</h4>
+                      <h5 class="slide-hover__type mt-10 mb-10">{{item.type}}</h5>
+                      <h3 class="slide-hover__price">{{item.price}}</h3>
                     </div>
                   </div>
                 </div>
-                <div class="carousel__slide">
-                  <div class="slide-img">
-                    <img src="img/strawberry-jam-cookies.jpg" alt="strawberry-jam-cookies">
-                    <div class="slide-hover">
-                      <h4 class="slide-hover__title">Choco Chip Cookies</h4>
-                      <h5 class="slide-hover__type mt-10 mb-10">Cookies, Pastries</h5>
-                      <h3 class="slide-hover__price">$18.00 _ $32.00</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel__arrow-right">
+                <div class="carousel__arrow-right" @click="next">
                   <i class="fas fa-chevron-right"></i>
                 </div>
               </div>
@@ -146,63 +142,24 @@
 
               <!-- carousel -->
               <div class="carousel">
-                <div class="carousel__arrow-left">
+                <div class="carousel__arrow-left" @click="prevAll">
                   <i class="fas fa-chevron-left"></i>
                 </div>
 
-                <div class="carousel__slide">
+                <div class="carousel__slide" v-for="item, i in products.slice(slideIndex, slideIndexSlice)">
                   <div class="slide-img">
-                    <img src="img/choco-chip-cookies.jpg" alt="choco-chip-cookies">
+                    <img :src="item.img" :alt="item.name">
                     <div class="slide-hover">
                       <h5 class="uppercase slide-hover__type">select options / quick view</h5>
                     </div>
                   </div>
                   <div class="slide-text mt-10">
-                    <h4 class="slide-hover__title mb-20 capitalize">choco chip cookies</h4>
-                    <h3 class="slide-hover__price">$18.00 _ $32.00</h3>
+                    <h4 class="slide-hover__title mb-20 capitalize">{{item.name}}</h4>
+                    <h3 class="slide-hover__price"><span v-show="item.onSale"><del>{{item.onSale}}</del></span> {{item.price}}</h3>
                   </div>
                 </div>
 
-                <div class="carousel__slide">
-                  <div class="slide-img">
-                    <img src="img/strawberry-jam-cookies.jpg" alt="strawberry-jam-cookies">
-                    <div class="slide-hover">
-                      <h5 class="uppercase slide-hover__type">select options / quick view</h5>
-                    </div>
-                  </div>
-                  <div class="slide-text mt-10">
-                    <h4 class="slide-hover__title mb-20 capitalize">strawberry jam cookies</h4>
-                    <h3 class="slide-hover__price">$36.00 _ $60.00</h3>
-                  </div>
-                </div>
-
-                <div class="carousel__slide">
-                  <div class="slide-img">
-                    <img src="img/strawberry-donut.jpg" alt="strawberry-donut">
-                    <div class="slide-hover">
-                      <h5 class="uppercase slide-hover__type">select options / quick view</h5>
-                    </div>
-                  </div>
-                  <div class="slide-text mt-10">
-                    <h4 class="slide-hover__title mb-20 capitalize">strawberry donut</h4>
-                    <h3 class="slide-hover__price">$24.00 _ $48.00</h3>
-                  </div>
-                </div>
-
-                <div class="carousel__slide">
-                  <div class="slide-img">
-                    <img src="img/perfect-macarons.jpg" alt="perfect-macarons">
-                    <div class="slide-hover">
-                      <h5 class="uppercase slide-hover__type">select options / quick view</h5>
-                    </div>
-                  </div>
-                  <div class="slide-text mt-10">
-                    <h4 class="slide-hover__title mb-20 capitalize">perfect macarons</h4>
-                    <h3 class="slide-hover__price">$32.00 _ $56.00</h3>
-                  </div>
-                </div>
-
-                <div class="carousel__arrow-right">
+                <div class="carousel__arrow-right" @click="nextAll">
                   <i class="fas fa-chevron-right"></i>
                 </div>
 
@@ -468,9 +425,6 @@
         <!-- /footer bottom -->
       </footer>
 
-      <div class="back-to-top">
-        <a href="#top"><i class="fas fa-chevron-up"></i></a>
-      </div>
     </div>
 
     <!-- javascript link -->
