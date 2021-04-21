@@ -2,7 +2,6 @@
   .inner-wrapper {
     display: flex;
     align-items: center;
-    height: 450px;
 
     .shopping-all__text {
       width: 25%;
@@ -20,7 +19,7 @@
 
   .carousel {
     width: 75%;
-    height: 100%;
+    height: $carouselShoppingAllHeight;
     display: flex;
     @include carousel(4, 20px, 40px, 90px, 14px);
     &__slide {

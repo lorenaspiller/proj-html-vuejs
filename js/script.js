@@ -125,68 +125,68 @@ var app = new Vue({
       {
         name: "choco chip cookies",
         type: "Cookies, Pastries",
-        img: '../img/choco-chip-cookies.jpg',
+        img: 'img/choco-chip-cookies.jpg',
         price: "$18.00 - $32.00"
       },
       {
         name: "strawberry jam cookies",
         type: "Cookies, Pastries",
-        img: '../img/strawberry-jam-cookies.jpg',
+        img: 'img/strawberry-jam-cookies.jpg',
         price: "$36.00 - $60.00"
       },
       {
         name: "strawberry donut",
         type: "Cookies, Pastries",
-        img: '../img/strawberry-donut.jpg',
+        img: 'img/strawberry-donut.jpg',
         price: "$24.00 - $48.00"
       },
       {
         name: "perfect macarons",
         type: "Cookies, Pastries",
-        img: '../img/perfect-macarons.jpg',
+        img: 'img/perfect-macarons.jpg',
         price: "$32.00 - $56.00"
       },
       {
         name: "cookies with ice cream",
         type: "Cookies, Pastries",
-        img: '../img/cookies-with-ice-cream.jpg',
+        img: 'img/cookies-with-ice-cream.jpg',
         price: "$18.00 - $34.00"
       },
       {
         name: "homemade bread",
         type: "Breads, Pastries",
-        img: '../img/home-bread.jpg',
+        img: 'img/home-bread.jpg',
         price: "$26.00 - $68.00"
       },
       {
         name: "premium bread",
         type: "Breads, Pastries",
-        img: '../img/premium-bread.jpg',
+        img: 'img/premium-bread.jpg',
         price: "$32.00 - $68.00"
       },
       {
         name: "cake with cherry topping",
         type: "Cookies, Pastries",
-        img: '../img/cherry-cake.jpg',
+        img: 'img/cherry-cake.jpg',
         price: "$99.00"
       },
       {
         name: "blackberry stuffed bread",
         type: "Breads, Pastries",
-        img: '../img/blackberry-stuffed-bread.jpg',
+        img: 'img/blackberry-stuffed-bread.jpg',
         price: "$22.00 - $46.00"
       },
       {
         name: "glazed bread with fruits",
         type: "Breads, Pastries",
-        img: '../img/glazed-pancake-with-lemon.jpg',
+        img: 'img/glazed-pancake-with-lemon.jpg',
         onSale: "$36.00",
         price: "$24.00"
       },
       {
         name: "chocolate cupcake",
         type: "Cookies, Pastries",
-        img: '../img/small-cupcake.jpg',
+        img: 'img/small-cupcake.jpg',
         price: "$26.00 - $68.00"
       },
     ],
@@ -194,25 +194,25 @@ var app = new Vue({
       {
         name: "choco chip cookies",
         type: "Cookies, Pastries",
-        img: '../img/choco-chip-cookies.jpg',
+        img: 'img/choco-chip-cookies.jpg',
         price: "$18.00 - $32.00"
       },
       {
         name: "strawberry jam cookies",
         type: "Cookies, Pastries",
-        img: '../img/strawberry-jam-cookies.jpg',
+        img: 'img/strawberry-jam-cookies.jpg',
         price: "$36.00 - $60.00"
       },
       {
         name: "cookies with ice cream",
         type: "Cookies, Pastries",
-        img: '../img/cookies-with-ice-cream.jpg',
+        img: 'img/cookies-with-ice-cream.jpg',
         price: "$18.00 - $34.00"
       },
       {
         name: "homemade bread",
         type: "Breads, Pastries",
-        img: '../img/home-bread.jpg',
+        img: 'img/home-bread.jpg',
         price: "$26.00 - $68.00"
       },
     ]
@@ -271,7 +271,7 @@ var app = new Vue({
       })
     },
     scrollHandler: function() {
-      if (window.scrollY > 90) {
+      if (window.scrollY > 100) {
         this.headerTopSticky = false;
       } else {
         this.headerTopSticky = true;
