@@ -19,16 +19,17 @@
     ul {
       display: flex;
 
-      li {
-        margin-left: 40px;
-        @include flexBoxAlignCenter;
 
+
+      li {
+        @include flexBoxAlignCenter;
 
         a {
           font-size: $fontHeading-type;
           font-weight: $fontSansMedium;
           line-height: $navHeight;
           position: relative;
+
 
           &.dynamic-link:after {
             content: "";
@@ -49,6 +50,38 @@
           }
         }
       }
+
+      li:first-of-type {
+
+        a{
+          position: relative;
+
+          &:before {
+            content: "";
+            display: block;
+            background-color: none repeat scroll 0 0 transparent;
+            bottom: 50px;
+            width: 0;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: $mainPrimaryColor;
+            width: 100%;
+            left:0;
+          }
+        }
+      }
     }
+
+
   }
+
+}
+.header-top--scroll_nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  background-color: $scrollNavBg;
 }

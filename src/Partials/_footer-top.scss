@@ -1,12 +1,12 @@
 footer {
-  .ft-wrapper {
-    display: flex;
+  .footer-top {
+    .ft-wrapper {
+      display: flex;
 
-    .footer-top-col-left {
-      width: 50%;
+      .footer-top-col-left {
+        width: 50%;
 
-      .footer-top {
-        &__logo {
+        .footer-top__logo {
           width: 180px;
 
           img {
@@ -14,7 +14,7 @@ footer {
           }
         }
 
-        &__nav {
+        .footer-top__nav {
           @include flexBoxAlignCenter;
 
           ul {
@@ -24,6 +24,10 @@ footer {
             li {
               @include linksFooterHover;
               vertical-align: middle;
+
+              .dynamic-link {
+                padding: 10px;
+              }
 
               .items-number {
                 background-color: $itemsCounterBg;
@@ -38,38 +42,38 @@ footer {
           }
         }
       }
-    }
 
-    .footer-top-col-right {
-      text-align: center;
-      width: 50%;
-      margin: 0 auto;
+      .footer-top-col-right {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
 
-      .bakery_subscribe {
+        .bakery_subscribe {
 
-        .newsletter-text {
-          font-size: $fontNewsletterTitle;
-        }
-
-        label {
-          display: block;
-          height: 40px;
-          width: 100%;
-        }
-
-        .subscribe-input {
-          height: 100%;
-          width: 40%;
-          border-radius: 5px;
-          border: 1px solid #ccc;
-          padding: 0 20px;
-
-          &:focus {
-            outline: none;
-            border-color: $mainPrimaryColor;
+          .newsletter-text {
+            font-size: $fontNewsletterTitle;
           }
-        }
 
+          label {
+            display: block;
+            height: 40px;
+            width: 100%;
+          }
+
+          .subscribe-input {
+            height: 100%;
+            width: 40%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 0 20px;
+
+            &:focus {
+              outline: none;
+              border-color: $mainPrimaryColor;
+            }
+          }
+
+        }
       }
     }
   }

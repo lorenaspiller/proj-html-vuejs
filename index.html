@@ -23,17 +23,17 @@
   <body>
     <div id="app" class="wrapper-all">
       <header id="top" class="mb-75">
-        <div class="header-top">
+        <div class="header-top" :class="headerTopSticky == false ? 'header-top--scroll_nav' : '' ">
           <!-- logo and nav -->
           <div class="header-top__logo">
             <img src="img/logo.png" alt="bakery logo">
           </div>
           <nav class="header-top__nav">
             <!-- dynamic navbar -->
-            <ul class="no-style uppercase" v-for="item in navbar" v-if="item.position.header == true">
+            <ul class="no-style uppercase" >
 
-              <li v-if="item.icon == false"><a href="#" class="pb-5 dynamic-link">{{item.name}}</a></li>
-              <li v-if="item.icon == true"><a href=""><i :class="item.family + ' ' +  item.prefix + item.title"></i></a></li>
+              <li class="ml-40" v-for="item in navbar" v-if="item.position.header == true && item.icon == false"><a href="#" class="pb-5 dynamic-link">{{item.name}}</a></li>
+              <li class="ml-40" v-for="item in navbar" v-if="item.position.header == true && item.icon == true"><a href=""><i :class="item.family + ' ' +  item.prefix + item.title"></i></a></li>
 
             </ul>
           </nav>
@@ -380,26 +380,27 @@
                 </div>
 
                 <div class="footer-top__nav mt-50">
-                  <ul class="no-style">
+                  <div class="list-wrapper">
                     <!-- dynamic footer navbar -->
-                    <ul class="no-style capitalize" v-for="item in navbar" v-if="item.position.footer == true">
+                    <ul class="no-style capitalize" >
 
-                      <li v-if="item.icon == false"><a href="#" class="pb-5 dynamic-link">{{item.name}}</a></li>
-                      <li v-if="item.icon == true"><a href=""><i :class="item.family + ' ' +  item.prefix + item.title"></i> <span class="items-number">{{shoppingItems}}</span></a></li>
+                      <li class="mr-30" v-for="item in navbar" v-if="item.position.footer == true && item.icon == false" ><a href="#" class="pb-5 dynamic-link">{{item.name}}</a></li>
+                      <li v-for="item in navbar" v-if="item.position.footer == true && item.icon == true"><a href="#" class="dynamic-link"><i :class="item.family + ' ' +  item.prefix + item.title"></i> <span class="items-number">{{shoppingItems}}</span></a></li>
 
                     </ul>
                   </div>
                 </div>
 
-                <div class="footer-top-col-right">
-                  <form class="" action="index.html">
-                    <div class="bakery_subscribe">
-                      <h2 class="section-title newsletter-text mb-30">Subscribe to our Newsletter</h2>
-                      <label for="subscribe">
-                        <input id="subscribe" class="subscribe-input" type="email" name="" value="" placeholder="Enter email address*">
-                        <button class="btn-subscribe">Subscribe</button>
-                      </label>
-                    </div>
+              </div>
+              <div class="footer-top-col-right">
+                <form class="" action="index.html">
+                  <div class="bakery_subscribe">
+                    <h2 class="section-title newsletter-text mb-30">Subscribe to our Newsletter</h2>
+                    <label for="subscribe">
+                      <input id="subscribe" class="subscribe-input" type="email" name="" value="" placeholder="Enter email address*">
+                      <button class="btn-subscribe">Subscribe</button>
+                    </label>
+                  </div>
                 </form>
               </div>
             </div>

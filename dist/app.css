@@ -794,7 +794,6 @@ header {
   display: flex;
 }
 .header-top__nav ul li {
-  margin-left: 40px;
   display: flex;
   align-items: center;
 }
@@ -819,6 +818,31 @@ header {
 .header-top__nav ul li a.dynamic-link:hover:after {
   width: 100%;
   left: 0;
+}
+.header-top__nav ul li:first-of-type a {
+  position: relative;
+}
+.header-top__nav ul li:first-of-type a:before {
+  content: "";
+  display: block;
+  background-color: none repeat scroll 0 0 transparent;
+  bottom: 50px;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #55328b;
+  width: 100%;
+  left: 0;
+}
+
+.header-top--scroll_nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  background-color: #fff;
 }
 
 .hero {
@@ -998,10 +1022,12 @@ header {
   font-size: 12px;
   font-weight: 400;
   color: #676371;
+  color: #fff;
 }
 .corporate-weddings__inner .left-column-corporate .inner-hover__title {
   font-weight: 700;
   color: #55328b;
+  color: #fff;
 }
 .corporate-weddings__inner .left-column-corporate .inner-hover:hover {
   opacity: 1;
@@ -1031,15 +1057,18 @@ header {
   justify-content: center;
   transition: all 0.6s ease-in-out;
   opacity: 0;
+  color: #fff;
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover__title-header {
   font-size: 12px;
   font-weight: 400;
   color: #676371;
+  color: #fff;
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover__title {
   font-weight: 700;
   color: #55328b;
+  color: #fff;
 }
 .corporate-weddings__inner .right-column-weddings .inner-hover:hover {
   opacity: 1;
@@ -1416,34 +1445,37 @@ header {
   font-size: 48px;
 }
 
-footer .ft-wrapper {
+footer .footer-top .ft-wrapper {
   display: flex;
 }
-footer .ft-wrapper .footer-top-col-left {
+footer .footer-top .ft-wrapper .footer-top-col-left {
   width: 50%;
 }
-footer .ft-wrapper .footer-top-col-left .footer-top__logo {
+footer .footer-top .ft-wrapper .footer-top-col-left .footer-top__logo {
   width: 180px;
 }
-footer .ft-wrapper .footer-top-col-left .footer-top__logo img {
+footer .footer-top .ft-wrapper .footer-top-col-left .footer-top__logo img {
   width: 100%;
 }
-footer .ft-wrapper .footer-top-col-left .footer-top__nav {
+footer .footer-top .ft-wrapper .footer-top-col-left .footer-top__nav {
   display: flex;
   align-items: center;
 }
-footer .ft-wrapper .footer-top-col-left .footer-top__nav ul {
+footer .footer-top .ft-wrapper .footer-top-col-left .footer-top__nav ul {
   display: flex;
   margin-right: 30px;
 }
-footer .ft-wrapper .footer-top-col-left .footer-top__nav ul li {
+footer .footer-top .ft-wrapper .footer-top-col-left .footer-top__nav ul li {
   transition: all 0.2s;
   vertical-align: middle;
 }
-footer .ft-wrapper .footer-top-col-left .footer-top__nav ul li:hover {
+footer .footer-top .ft-wrapper .footer-top-col-left .footer-top__nav ul li:hover {
   opacity: 0.7;
 }
-footer .ft-wrapper .footer-top-col-left .footer-top__nav ul li .items-number {
+footer .footer-top .ft-wrapper .footer-top-col-left .footer-top__nav ul li .dynamic-link {
+  padding: 10px;
+}
+footer .footer-top .ft-wrapper .footer-top-col-left .footer-top__nav ul li .items-number {
   background-color: #f0edf5;
   width: 20px;
   height: 20px;
@@ -1452,27 +1484,27 @@ footer .ft-wrapper .footer-top-col-left .footer-top__nav ul li .items-number {
   vertical-align: middle;
   border-radius: 50%;
 }
-footer .ft-wrapper .footer-top-col-right {
+footer .footer-top .ft-wrapper .footer-top-col-right {
   text-align: center;
   width: 50%;
   margin: 0 auto;
 }
-footer .ft-wrapper .footer-top-col-right .bakery_subscribe .newsletter-text {
+footer .footer-top .ft-wrapper .footer-top-col-right .bakery_subscribe .newsletter-text {
   font-size: 25px;
 }
-footer .ft-wrapper .footer-top-col-right .bakery_subscribe label {
+footer .footer-top .ft-wrapper .footer-top-col-right .bakery_subscribe label {
   display: block;
   height: 40px;
   width: 100%;
 }
-footer .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input {
+footer .footer-top .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input {
   height: 100%;
   width: 40%;
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 0 20px;
 }
-footer .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input:focus {
+footer .footer-top .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input:focus {
   outline: none;
   border-color: #55328b;
 }
@@ -1504,6 +1536,7 @@ footer .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input:focu
   bottom: 50px;
   right: 2%;
   cursor: pointer;
+  background: transparent;
 }
 .back-to-top:focus {
   outline: none;

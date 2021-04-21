@@ -6,6 +6,7 @@ var app = new Vue({
     slideIndexSlice: 4,
     slideIndexSliceProd: 2,
     chevronBackToTop: false,
+    headerTopSticky: false,
     navbar: [
       {
         name: 'home',
@@ -270,12 +271,19 @@ var app = new Vue({
       })
     },
     scrollHandler: function() {
-      if (window.scrollY > 7000) {
-        this.chevronBackToTop = false;
+      if (window.scrollY > 90) {
+        this.headerTopSticky = false;
       } else {
-        this.chevronBackToTop = true;
+        this.headerTopSticky = true;
       }
-    }
+      if (window.scrollY > 150) {
+        this.chevronBackToTop = true;
+      } else {
+        this.chevronBackToTop = false;
+      }
+
+
+    },
   }
 
 })
