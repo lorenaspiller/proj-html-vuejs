@@ -1,0 +1,24 @@
+// footer bottom
+.footer-bottom {
+  .fb-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .copyright {
+      &__text {
+        font-size: $fontCopyright;
+        color: $SecondaryTextColor;
+      }
+    }
+
+    .social-media {
+      display: flex;
+
+      .social-link {
+        font-size: $fontSocialLinks;
+        padding: 20px;
+        @include linksFooterHover;
+      }
+    }
+  }
+}

@@ -88,8 +88,33 @@ var app = new Vue({
           header: true,
           footer: true
         },
-        itemCounter: this.shoppingItems,
       }
+    ],
+    socials: [
+      {
+        address: 'instagram',
+        title: 'instagram',
+        family: 'fab',
+        prefix: 'fa-',
+      },
+      {
+        address: 'twitter',
+        title: 'twitter',
+        family: 'fab',
+        prefix: 'fa-',
+      },
+      {
+        address: 'facebook',
+        title: 'facebook-f',
+        family: 'fab',
+        prefix: 'fa-',
+      },
+      {
+        address: 'pinterest',
+        title: 'pinterest-p',
+        family: 'fab',
+        prefix: 'fa-',
+      },
     ]
   },
   methods: {

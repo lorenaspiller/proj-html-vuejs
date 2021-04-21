@@ -5,7 +5,8 @@
 
 
   .social-box-image {
-    width: calc(25% - 25px);
+    width: calc(25% - 20px);
+    height: 400px;
     overflow: hidden;
 
     img {
@@ -30,7 +31,7 @@
       @include flexBoxColumnCenter;
       background: $socialTextBg;
       text-align: center;
-      width: calc( (25% - 25px) * 2 + 25px );
+      width: calc(50% - 40px + 20px);
       height: auto;
     }
   }

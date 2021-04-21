@@ -27,3 +27,23 @@
     color: $mainSecondaryColor;
   }
 }
+
+.btn-subscribe {
+  font-family: 'Work Sans', sans-serif;
+  font-size: $fontButton;
+  font-weight: $fontSansMedium;
+  height: 100%;
+  padding: 0 50px;
+  width: 30%;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .2s;
+  background-color: $mainPrimaryColor;
+  color: $mainSecondaryColor;
+  &:hover {
+    background-color: $btnHoverPrimary;
+    color: $mainPrimaryColor;
+
+  }
+}

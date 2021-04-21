@@ -1,0 +1,76 @@
+footer {
+  .ft-wrapper {
+    display: flex;
+
+    .footer-top-col-left {
+      width: 50%;
+
+      .footer-top {
+        &__logo {
+          width: 180px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        &__nav {
+          @include flexBoxAlignCenter;
+
+          ul {
+            display: flex;
+            margin-right: 30px;
+
+            li {
+              @include linksFooterHover;
+              vertical-align: middle;
+
+              .items-number {
+                background-color: $itemsCounterBg;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-top-col-right {
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+
+      .bakery_subscribe {
+
+        .newsletter-text {
+          font-size: $fontNewsletterTitle;
+        }
+
+        label {
+          display: block;
+          height: 40px;
+          width: 100%;
+        }
+
+        .subscribe-input {
+          height: 100%;
+          width: 40%;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          padding: 0 20px;
+
+          &:focus {
+            outline: none;
+            border-color: $mainPrimaryColor;
+          }
+        }
+
+      }
+    }
+  }
+}

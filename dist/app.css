@@ -67,6 +67,25 @@ a {
   color: #fff;
 }
 
+.btn-subscribe {
+  font-family: "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 100%;
+  padding: 0 50px;
+  width: 30%;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #55328b;
+  color: #fff;
+}
+.btn-subscribe:hover {
+  background-color: #f0edf5;
+  color: #55328b;
+}
+
 h1, h2, h4 {
   font-family: "Source Serif Pro", serif;
 }
@@ -1330,7 +1349,8 @@ header {
   justify-content: space-between;
 }
 .social .social-top .social-box-image {
-  width: calc(25% - 25px);
+  width: calc(25% - 20px);
+  height: 400px;
   overflow: hidden;
 }
 .social .social-top .social-box-image img {
@@ -1350,7 +1370,7 @@ header {
   align-items: center;
   background: linear-gradient(240deg, #f0edf5 10%, #f9f1f2 90%);
   text-align: center;
-  width: calc( (25% - 25px) * 2 + 25px );
+  width: calc(50% - 40px + 20px);
   height: auto;
 }
 .social .social-bottom {
@@ -1359,7 +1379,8 @@ header {
   justify-content: space-between;
 }
 .social .social-bottom .social-box-image {
-  width: calc(25% - 25px);
+  width: calc(25% - 20px);
+  height: 400px;
   overflow: hidden;
 }
 .social .social-bottom .social-box-image img {
@@ -1389,4 +1410,85 @@ header {
 }
 .shopping-seasonal .shopping-seasonal-wrapper .social-title {
   font-size: 48px;
+}
+
+footer .ft-wrapper {
+  display: flex;
+}
+footer .ft-wrapper .footer-top-col-left {
+  width: 50%;
+}
+footer .ft-wrapper .footer-top-col-left .footer-top__logo {
+  width: 180px;
+}
+footer .ft-wrapper .footer-top-col-left .footer-top__logo img {
+  width: 100%;
+}
+footer .ft-wrapper .footer-top-col-left .footer-top__nav {
+  display: flex;
+  align-items: center;
+}
+footer .ft-wrapper .footer-top-col-left .footer-top__nav ul {
+  display: flex;
+  margin-right: 30px;
+}
+footer .ft-wrapper .footer-top-col-left .footer-top__nav ul li {
+  transition: all 0.2s;
+  vertical-align: middle;
+}
+footer .ft-wrapper .footer-top-col-left .footer-top__nav ul li:hover {
+  opacity: 0.7;
+}
+footer .ft-wrapper .footer-top-col-left .footer-top__nav ul li .items-number {
+  background-color: #f0edf5;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+footer .ft-wrapper .footer-top-col-right {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+footer .ft-wrapper .footer-top-col-right .bakery_subscribe .newsletter-text {
+  font-size: 25px;
+}
+footer .ft-wrapper .footer-top-col-right .bakery_subscribe label {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+footer .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input {
+  height: 100%;
+  width: 40%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 0 20px;
+}
+footer .ft-wrapper .footer-top-col-right .bakery_subscribe .subscribe-input:focus {
+  outline: none;
+  border-color: #55328b;
+}
+
+.footer-bottom .fb-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom .fb-wrapper .copyright__text {
+  font-size: 12px;
+  color: #676371;
+}
+.footer-bottom .fb-wrapper .social-media {
+  display: flex;
+}
+.footer-bottom .fb-wrapper .social-media .social-link {
+  font-size: 20px;
+  padding: 20px;
+  transition: all 0.2s;
+}
+.footer-bottom .fb-wrapper .social-media .social-link:hover {
+  opacity: 0.7;
 }
