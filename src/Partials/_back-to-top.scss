@@ -1,0 +1,17 @@
+.back-to-top {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+
+
+  a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $chevronBgColor;
+    opacity: 0.8;
+    border-radius: 10px;
+    @include flexBoxCenterCenter;
+    color: $chevronFontColor;
+  }
+}
