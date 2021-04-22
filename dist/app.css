@@ -771,15 +771,6 @@ header {
   background-size: 135%;
 }
 
-.header-top--scroll_nav {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  right: 0;
-  z-index: 15;
-  background-color: #fff;
-}
-
 .header-top {
   height: 125px;
   display: flex;
@@ -844,6 +835,16 @@ header {
   background: #3698DB;
   width: 100%;
   left: 0;
+}
+
+.header-top--scroll_nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  background-color: #fff;
+  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
@@ -1539,7 +1540,7 @@ footer .footer-top .ft-wrapper .footer-top-col-right .bakery_subscribe .subscrib
   display: none;
   border: 0;
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   right: 2%;
   cursor: pointer;
   background: transparent;
@@ -1553,7 +1554,7 @@ footer .footer-top .ft-wrapper .footer-top-col-right .bakery_subscribe .subscrib
   width: 50px;
   height: 50px;
   background-color: #333;
-  opacity: 0.8;
+  opacity: 0.6;
   border-radius: 10px;
   display: flex;
   justify-content: center;

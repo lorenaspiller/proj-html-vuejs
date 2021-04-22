@@ -2,7 +2,7 @@
   display: none;
   border: 0;
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   right: 2%;
   cursor: pointer;
   background: transparent;
@@ -17,7 +17,7 @@
     width: 50px;
     height: 50px;
     background-color: $chevronBgColor;
-    opacity: 0.8;
+    opacity: 0.6;
     border-radius: 10px;
     @include flexBoxCenterCenter;
   }
