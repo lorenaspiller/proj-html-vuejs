@@ -12,7 +12,7 @@ var app = new Vue({
     sliceIndex: 4,
 
     chevronBackToTop: false,
-    headerTopSticky: false,
+    headerTopSticky: true,
     navbar: [
       {
         name: 'home',
