@@ -126,13 +126,15 @@ var app = new Vue({
         name: "choco chip cookies",
         type: "Cookies, Pastries",
         img: 'img/choco-chip-cookies.jpg',
-        price: "$18.00 - $32.00"
+        price: "$18.00 - $32.00",
+        selection: true
       },
       {
         name: "strawberry jam cookies",
         type: "Cookies, Pastries",
         img: 'img/strawberry-jam-cookies.jpg',
-        price: "$36.00 - $60.00"
+        price: "$36.00 - $60.00",
+        selection: true
       },
       {
         name: "strawberry donut",
@@ -150,13 +152,15 @@ var app = new Vue({
         name: "cookies with ice cream",
         type: "Cookies, Pastries",
         img: 'img/cookies-with-ice-cream.jpg',
-        price: "$18.00 - $34.00"
+        price: "$18.00 - $34.00",
+        selection: true
       },
       {
         name: "homemade bread",
         type: "Breads, Pastries",
         img: 'img/home-bread.jpg',
-        price: "$26.00 - $68.00"
+        price: "$26.00 - $68.00",
+        selection: true
       },
       {
         name: "premium bread",
@@ -190,35 +194,23 @@ var app = new Vue({
         price: "$26.00 - $68.00"
       },
     ],
-    smallSelection: [
-      {
-        name: "choco chip cookies",
-        type: "Cookies, Pastries",
-        img: 'img/choco-chip-cookies.jpg',
-        price: "$18.00 - $32.00"
-      },
-      {
-        name: "strawberry jam cookies",
-        type: "Cookies, Pastries",
-        img: 'img/strawberry-jam-cookies.jpg',
-        price: "$36.00 - $60.00"
-      },
-      {
-        name: "cookies with ice cream",
-        type: "Cookies, Pastries",
-        img: 'img/cookies-with-ice-cream.jpg',
-        price: "$18.00 - $34.00"
-      },
-      {
-        name: "homemade bread",
-        type: "Breads, Pastries",
-        img: 'img/home-bread.jpg',
-        price: "$26.00 - $68.00"
-      },
-    ]
+    smallSelection: []
   },
   mounted: function() {
+    // event listener on scroll
     document.addEventListener('scroll', this.scrollHandler);
+    
+    // filtering products items in a small selection
+    this.products.forEach((item, i) => {
+      if (true) {
+        if (item.selection) {
+          this.smallSelection.push(item);
+        }
+      }
+    });
+  },
+  computed: {
+
   },
 
   methods: {
@@ -281,7 +273,6 @@ var app = new Vue({
       } else {
         this.chevronBackToTop = false;
       }
-
 
     },
   }
