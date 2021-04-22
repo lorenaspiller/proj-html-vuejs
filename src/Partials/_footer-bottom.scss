@@ -17,6 +17,7 @@
       .social-link {
         font-size: $fontSocialLinks;
         padding: 20px;
+        color: $mainPrimaryColor;
         @include linksFooterHover;
       }
     }

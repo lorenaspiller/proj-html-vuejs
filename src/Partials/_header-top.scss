@@ -1,3 +1,12 @@
+.header-top--scroll_nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  background-color: $scrollNavBg;
+}
+
 .header-top {
   height: $navHeight;
   @include flexBoxSpBetween;
@@ -77,12 +86,5 @@
 
   }
 
-}
-.header-top--scroll_nav {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  right: 0;
-  z-index: 15;
-  background-color: $scrollNavBg;
+
 }

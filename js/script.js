@@ -2,9 +2,15 @@ var app = new Vue({
   el: '#app',
   data: {
     shoppingItems: 0,
-    slideIndex: 0,
-    slideIndexSlice: 4,
+
+    //index for products carousel
+    slideIndexProd: 0,
     slideIndexSliceProd: 2,
+
+    // index for shopping all carousel
+    sliceIndexMin: 0,
+    sliceIndex: 4,
+
     chevronBackToTop: false,
     headerTopSticky: false,
     navbar: [
@@ -194,12 +200,14 @@ var app = new Vue({
         price: "$26.00 - $68.00"
       },
     ],
-    smallSelection: []
+    smallSelection: [],
+    // piero: 3,
+    // franco: -1
   },
   mounted: function() {
     // event listener on scroll
     document.addEventListener('scroll', this.scrollHandler);
-    
+
     // filtering products items in a small selection
     this.products.forEach((item, i) => {
       if (true) {
@@ -208,30 +216,28 @@ var app = new Vue({
         }
       }
     });
-  },
-  computed: {
 
   },
 
   methods: {
     // carousel on 2 slides of products section
     prev: function() {
-      this.slideIndex = this.slideIndex - 2;
+      this.slideIndexProd = this.slideIndexProd - 2;
       this.slideIndexSliceProd = this.slideIndexSliceProd - 2;
 
-      if(this.slideIndex < 0){
+      if(this.slideIndexProd < 0){
         this.slideIndexSliceProd = this.smallSelection.length;
-        this.slideIndex = this.slideIndexSliceProd - 2;
+        this.slideIndexProd = this.slideIndexSliceProd - 2;
       }
     },
 
     // carousel on 2 slides of products section
     next: function() {
-      this.slideIndex = this.slideIndex + 2;
+      this.slideIndexProd = this.slideIndexProd + 2;
       this.slideIndexSliceProd = this.slideIndexSliceProd + 2;
 
       if(this.slideIndexSliceProd > this.smallSelection.length){
-        this.slideIndex = 0;
+        this.slideIndexProd = 0;
         this.slideIndexSliceProd = 2;
       }
 
@@ -247,14 +253,58 @@ var app = new Vue({
       }
     },
 
-    nextAll: function() {
-      this.slideIndex = this.slideIndex + 1;
-      this.slideIndexSlice =  this.slideIndexSlice + 1;
+    nextAll: function(index) {
+      this.sliceIndexMin = this.sliceIndexMin + 1; //4
+      this.sliceIndex =  this.sliceIndex + 1; //8
 
-      if(this.slideIndexSlice > this.products.length){
-        this.slideIndex = 0;
-        this.slideIndexSlice = 4;
+      if(this.sliceIndex > this.products.length){
+        this.sliceIndex = 4;
+        this.sliceIndexMin = 0;
       }
+
+
+
+      // this.piero ++;
+      // this.franco ++;
+      // if (this.piero > 10) {
+      //   this.franco = -1;
+      //   this.piero = 8;
+      // }
+      // console.log(index);
+
+
+
+
+
+
+
+
+
+
+
+      //
+      // this.slideIndexSlice = this.slideIndexSlice + 4
+      //
+      //
+      // if (this.slideIndexSlice < 8) {
+      //   this.slideIndex = this.slideIndex + 4;
+      //   this.slideIndexSlice =  this.slideIndexSlice + 4;
+      //   this.carouselShoppingAll = this.products.slice(this.slideIndex, this.slideIndexSlice);
+      // }
+      //
+      // if (this.slideIndexSlice == 8) {
+      //   this.carouselShoppingAll.concat(this.products);
+      //
+      // }
+
+      // if (this.slideIndexSlice < this.products.length) {
+      //   this.slideIndex = this.slideIndex + 4;
+      //   this.slideIndexSlice =  this.slideIndexSlice + 4;
+      //   this.carouselShoppingAll = this.products.slice(this.slideIndex, this.slideIndexSlice);
+      //
+      // } else  {
+      //   this.carouselShoppingAll.concat(this.products);
+      // }
     },
 
     backToTop: function() {
@@ -263,7 +313,7 @@ var app = new Vue({
       })
     },
     scrollHandler: function() {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 150) {
         this.headerTopSticky = false;
       } else {
         this.headerTopSticky = true;
