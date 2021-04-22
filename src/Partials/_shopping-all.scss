@@ -31,11 +31,11 @@
           font-size: $fontHoverPriceSecondary;
           font-weight: $fontSansReg;
         }
+        .item-on-sale {
+          opacity: .6;
+          font-size: $fontHoverPrice;
+        }
       }
-    }
-
-    .pippo {
-      display: none;
     }
   }
 }

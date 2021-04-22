@@ -13,6 +13,8 @@ var app = new Vue({
 
     chevronBackToTop: false,
     headerTopSticky: true,
+
+    //navbar and footer links
     navbar: [
       {
         name: 'home',
@@ -20,11 +22,7 @@ var app = new Vue({
         position: {
           header: true,
           footer: false
-        },
-        dropDown: [
-          'Classic Shop',
-          'Extended Width'
-        ]
+        }
       },
       {
         name: 'shop',
@@ -127,6 +125,7 @@ var app = new Vue({
         prefix: 'fa-',
       },
     ],
+    // main products list
     products: [
       {
         name: "choco chip cookies",
@@ -200,9 +199,9 @@ var app = new Vue({
         price: "$26.00 - $68.00"
       },
     ],
-    smallSelection: [],
-    // piero: 3,
-    // franco: -1
+
+    // small selection of products list
+    smallSelection: []
   },
   mounted: function() {
     // event listener on scroll
@@ -216,7 +215,6 @@ var app = new Vue({
         }
       }
     });
-
   },
 
   methods: {
@@ -243,75 +241,36 @@ var app = new Vue({
 
     },
 
+    // carousel on 4 slides of show-all section
     prevAll: function() {
-      this.slideIndex = this.slideIndex - 1;
-      this.slideIndexSlice =  this.slideIndexSlice - 1;
+      this.sliceIndexMin --;
+      this.sliceIndex --;
 
-      if(this.slideIndex < 0){
-        this.slideIndexSlice = this.products.length;
-        this.slideIndex = this.slideIndexSlice - 4;
+      if(this.sliceIndexMin < 0){
+        this.sliceIndex = this.products.length;
+        this.sliceIndexMin = this.sliceIndex - 4;
       }
     },
 
-    nextAll: function(index) {
-      this.sliceIndexMin = this.sliceIndexMin + 1; //4
-      this.sliceIndex =  this.sliceIndex + 1; //8
+    // carousel on 4 slides of show-all section
+    nextAll: function() {
+      this.sliceIndexMin ++;
+      this.sliceIndex ++;
 
       if(this.sliceIndex > this.products.length){
         this.sliceIndex = 4;
         this.sliceIndexMin = 0;
       }
-
-
-
-      // this.piero ++;
-      // this.franco ++;
-      // if (this.piero > 10) {
-      //   this.franco = -1;
-      //   this.piero = 8;
-      // }
-      // console.log(index);
-
-
-
-
-
-
-
-
-
-
-
-      //
-      // this.slideIndexSlice = this.slideIndexSlice + 4
-      //
-      //
-      // if (this.slideIndexSlice < 8) {
-      //   this.slideIndex = this.slideIndex + 4;
-      //   this.slideIndexSlice =  this.slideIndexSlice + 4;
-      //   this.carouselShoppingAll = this.products.slice(this.slideIndex, this.slideIndexSlice);
-      // }
-      //
-      // if (this.slideIndexSlice == 8) {
-      //   this.carouselShoppingAll.concat(this.products);
-      //
-      // }
-
-      // if (this.slideIndexSlice < this.products.length) {
-      //   this.slideIndex = this.slideIndex + 4;
-      //   this.slideIndexSlice =  this.slideIndexSlice + 4;
-      //   this.carouselShoppingAll = this.products.slice(this.slideIndex, this.slideIndexSlice);
-      //
-      // } else  {
-      //   this.carouselShoppingAll.concat(this.products);
-      // }
     },
 
+    //scroll back to top with chevron
     backToTop: function() {
       window.scrollTo({
         top: 0,
       })
     },
+
+    // back to top and sticky header events on mouse scroll
     scrollHandler: function() {
       if (window.scrollY > 150) {
         this.headerTopSticky = false;
@@ -323,8 +282,6 @@ var app = new Vue({
       } else {
         this.chevronBackToTop = false;
       }
-
     },
   }
-
 })
