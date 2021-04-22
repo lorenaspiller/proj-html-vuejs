@@ -217,6 +217,7 @@ var app = new Vue({
     });
   },
 
+
   methods: {
     // carousel on 2 slides of products section
     prev: function() {

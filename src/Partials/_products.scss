@@ -17,6 +17,8 @@
     .carousel {
       width: 60%;
       @include carousel(2, 20px, 40px, 90px, 20px);
+
+      
     }
   }
 
